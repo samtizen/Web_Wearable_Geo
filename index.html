@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title>Circular UI</title>
+    <link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+    <link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+    <!-- load theme file for your application -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="ui-page" id="main" data-enable-page-scroll="false">
+        <header class="ui-header">
+            <h2 class="ui-title">Distance Tracker</h2>
+        </header>
+        <div class="ui-content">
+            <div>
+                <ul class="ui-listview" id="info-container-id">
+                </ul>
+            </div>
+        </div>
+        <footer class="ui-footer ui-bottom-button ui-fixed">
+            <button class="ui-btn" id="btn-tracker-action">START</button>
+        </footer>
+    </div>
+
+    <div id="info-popup-id" class="ui-popup" data-role="popup">
+		<div class="ui-popup-content"></div>
+		<div class="ui-popup-footer ui-bottom-button">
+			<a id="info-popup-btn-id" href="#" class="ui-btn" data-rel="back">OK</a>
+		</div>
+	</div>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/tau/wearable/js/tau.min.js"></script>
+    <script src="js/main.tizen.js"></script>
+    <script src="js/battery-checker.js"></script>
+    <script src="lib/geo/geolib.js"></script>
+    <script src="js/main.geo-app.js"></script>
+</body>
+
+</html>
